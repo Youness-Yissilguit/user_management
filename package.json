@@ -1,0 +1,30 @@
+{
+  "name": "user_managment",
+  "version": "1.0.0",
+  "description": "nodejs application for users management",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Youness-Yissilguit/user_management"
+  },
+  "keywords": [
+    "nodejs",
+    "users",
+    "management",
+    "crud",
+    "javascript"
+  ],
+  "author": "Youness Tissilguit",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20"
+  }
+}

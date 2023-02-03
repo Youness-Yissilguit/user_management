@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User form</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+    <div class="form-style-6">
+        <h1>Add User</h1>
+        <form method="post" action="<% if (user) { %>/userform/<%= user["id"] %> <% }else{ %>/userform<% } %>">
+            <input type="text" name="firstName" placeholder="User first name" value="<% if (user) { %><%= user["first_name"] %> <% } %>"/>
+            <input type="text" name="lastName" placeholder="User last name"  value="<% if (user) { %><%= user["last_name"] %> <% } %>"/>
+            <input type="text" name="cin" placeholder="Cin"  value="<% if (user) { %><%= user["CIN"] %> <% } %>"/>
+            <input type="text" name="address" placeholder="Address"  value="<% if (user) { %><%= user["address"] %> <% } %>"/>
+            <textarea name="about" placeholder="About the user"> <% if (user) { %><%= user["about"] %> <% } %></textarea>
+            <input type="submit" value="Send" />
+            <input type="text" name="userid" style="display: block;">
+        </form>
+        </div>
+</body>
+</html>
